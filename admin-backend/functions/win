@@ -1,0 +1,4 @@
+
+> serve
+> export NODE_ENV=stage && npm run build && firebase emulators:start --only functions -P stage
+

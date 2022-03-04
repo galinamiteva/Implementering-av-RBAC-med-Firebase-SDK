@@ -1,0 +1,49 @@
+{
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "serve": "export NODE_ENV=stage && npm run build && firebase emulators:start --only functions -P stage",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "build:win": "rd /s /q dist && tsc && xcopy /E /I files dist\\files && xcopy /E /I db dist\\db",
+    "serve:win": "set NODE_ENV=stage && npm run build:win && firebase emulators:start --only functions -P stage",
+    "deploy:stage:win": "set NODE_ENV=stage && npm run build:win && firebase deploy --only functions -P stage"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "dist/index.js",
+  "dependencies": {
+    "@react-native-firebase/app": "^12.8.0",
+    "@react-native-firebase/firestore": "^12.8.0",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/node-mailjet": "^3.3.4",
+    "@types/qrcode": "^1.3.5",
+    "axios": "^0.21.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase": "^8.2.5",
+    "firebase-admin": "^10.0.1",
+    "firebase-functions": "^3.16.0",
+    "moment": "^2.29.1",
+    "node-mailjet": "^3.0.5",
+    "qrcode": "^1.4.4",
+    "react-native-firebase": "^5.6.0",
+    "stripe": "^8.197.0",
+    "swagger-ui-express": "^4.1.6",
+    "underscore": "^1.13.0"
+  },
+  "devDependencies": {
+    "@types/underscore": "^1.11.1",
+    "firebase-functions-test": "^0.2.3",
+    "http-proxy-middleware": "^2.0.1",
+    "tslint": "^5.12.0",
+    "typescript": "^3.9.7"
+  },
+  "private": true
+}

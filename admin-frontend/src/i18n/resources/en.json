@@ -1,0 +1,15 @@
+{
+    "translation": {
+      "login": "Login",
+      "register": "Register",
+      "overview": "Overview",
+      "manage_stations": "Stations",
+      "bookings": "Bookings",
+      "users": "Users",
+      "sites": "Sites",
+      "station_detail": "Station Detail",
+      "account": "Account",
+      "404": "404",
+      "settings": "Settings"
+    }
+  }

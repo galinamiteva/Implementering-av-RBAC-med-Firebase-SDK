@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "admin-rbac-4a804"
+  },
+  "targets": {
+    "admin-rbac-4a804": {
+      "hosting": {
+        "admin": [
+          "admin-area-dashboard"
+        ]
+      }
+    }
+  }
+}
