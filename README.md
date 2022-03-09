@@ -1,2 +1,3 @@
 # Implementering-av-RBAC-med-Firebase-SDK
 En liten del av min examens arbete Implementering av RBAC med Firebase SDK
+Teknologier : Firebase, Node, Typescript, ReactJs, Material UI, Formik, Yup
